@@ -1,0 +1,255 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	padding:0;
+}
+.section{
+	padding-top: 110px;
+	padding-bottom: 100px;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header{
+	padding-top: 60px;
+	padding-bottom: 140px;
+	background: rgba(77,189,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+}
+
+
+.wraper{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	align-items:center;
+	}
+h1{
+	font-size: 37px;
+	font-weight: bold;
+	width: 570px;
+}
+
+.intro span{
+	font-size: 59px;
+	font-weight: bold;
+}
+.intro p{
+	width: 400px;
+	padding-bottom: 40px;
+}
+
+
+.btn{
+	text-decoration: none;
+	color: black;
+	width: 220px;
+	padding: 19px 26px;
+	background-color: #ffd429;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	transition: all 0.5s ease; 
+}
+
+.btn:hover{
+	background-color: #d1ab14;
+}
+
+h2{
+	text-align: center;
+	padding-bottom: 75px;
+	font-size: 30px;
+}
+.future{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.future p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+}
+.future_time{
+	width: 280px;
+	background: url(../images/icons1.jpg) no-repeat top center;
+	padding-top: 90px;
+}
+.future_travel{
+	width: 280px;
+	background: url(../images/icons2.jpg) no-repeat top center;
+	padding-top: 90px;
+}
+
+.future_value{
+	width: 280px;
+	background: url(../images/icons3.jpg) no-repeat top center;
+	padding-top: 90px;
+}
+.section_gray{
+	background-color: #ecf3f8;
+}
+.container_form{
+	display: flex;
+	flex-direction: column;
+}
+.btn_form{
+	border: 0;
+	width: 342px;
+}
+
+.form{
+	margin: 0 33% 0 33%;
+
+}
+
+.input{
+	width: 342px;
+	height: 48px;
+	padding-left: 22px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	margin-bottom: 15px
+}
+
+.footer{
+	background-color: #164d7a;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 62px;
+	padding-bottom: 62px;
+}
+.red{
+	color: red;
+}
+.animated {
+	opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1200px){
+	.container{
+		width: 992px;
+	}
+	.wraper{
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+	.future{
+		padding-bottom: 0;
+	}
+	.future div{
+		width: auto;
+		padding-left: 20px;
+			}
+	h1{
+		text-align: center;
+		width: 100%;
+	}
+	.intro{
+		text-align: center;
+	}
+	.intro p{
+		width: 100%;
+	}
+	.logo{
+		padding-left: 50px;
+	}
+
+}
+
+
+@media screen and (max-width: 992px){
+	.container{
+		width: 768px;
+	}
+	
+	.intro p{
+		padding: 0 20px 40px 20px;;
+	}
+	.form{
+		margin: 0 50px 50px 50px;
+    	display: inline;
+	}
+	.input{
+		width: 100%;
+	}
+	.footer{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.btn_form{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 576px;
+	}
+	.future{
+		flex-direction: column;
+	}
+	.footer{
+		padding: 7px 0;
+		font-size: 8px;
+	}
+	.container p{
+		margin-bottom: 0;
+	}
+	.dre{
+		width: 575px;
+	}
+	
+}
+
+
+@media screen and (max-width: 576px){
+	.container{
+		width: 90%;
+		display: inline;
+	}
+	h1{
+		font-size: 25px;
+		padding: 0;
+	}
+	h2{
+		padding: 25px 0;
+	}
+	.form{
+		display: block;
+	}
+	.dre{
+		width: 320px;
+	}
+	
+		
+}
